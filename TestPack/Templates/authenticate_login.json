@@ -1,0 +1,15 @@
+{
+  "RequestHeader": {
+    "RequesterContext": {
+      "RequestId": "{{$guid}}",
+      "RegionCode": "SG",
+      "ServiceCode": "{{serviceCode}}",
+      "SourceSystem": "{{sourceSystem}}",
+      "RequestAt": "{{$now}}"
+    }
+  },
+  "RequestDetails": {
+    "email": "{{email}}",
+    "LoginMethod": "{{loginMethod}}"
+  }
+}

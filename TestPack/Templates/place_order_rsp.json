@@ -1,0 +1,23 @@
+{
+  "RequestHeader": {
+    "RequestId": "{{$guid}}",
+    "RegionalCode": "SG",
+    "ServiceCode": "UTOrderPlacement",
+    "SourceSystem": "{{sourceSystem}}",
+    "RequestAt": "{{$now}}"
+  },
+  "RequestDetails": {
+    "ChannelReferenceNo": "RT{{$timestamp}}",
+    "CustomerId": "{{customerId}}",
+    "InvestorType": "EXISTING",
+    "AccountNo": "{{accountNo}}",
+    "OrderType": "RSP",
+    "FundCode": "{{buyFundCode}}",
+    "Currency": "SGD",
+    "MonthlyAmount": 500.00,
+    "Frequency": "MONTHLY",
+    "DebitDay": 15,
+    "StartDate": "{{$dateAdd:30}}",
+    "DebitAccountNo": "{{casaAccountNo}}"
+  }
+}

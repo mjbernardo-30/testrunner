@@ -1,0 +1,64 @@
+{
+  "requestHeader": {
+    "RequesterContext": {
+      "RequestId": "{{$guid}}",
+      "RegionCode": "SG",
+      "ServiceCode": "{{serviceCode}}",
+      "SourceSystem": "{{sourceSystem}}",
+      "RequestAt": "{{$now}}"
+    }
+  },
+  "requestDetails": {
+    "agencyId": 1,
+    "empId": 1,
+    "header": {
+      "mnlCdvNo": "SampleCdv2",
+      "voucherDate": "2026-11-22",
+      "payeeType": "EM",
+      "payeeCode": "ABAC",
+      "payeeName": "ABACUS, ABACUS",
+      "payeeId": 1,
+      "remarks": "",
+      "totalDebit": 100,
+      "totalCredit": 100
+    },
+    "adjustments": [
+      {
+        "transType": "O",
+        "category": null,
+        "type": null,
+        "refNo": null,
+        "mnlRefNo": null,
+        "refDate": null,
+        "isDebit": true,
+        "currency": "PHP",
+        "rate": 1,
+        "amount": 100,
+        "accountCode": 200115,
+        "remarks": "",
+        "department": "",
+        "payeeType": "OT",
+        "payeeName": "",
+        "payeeId": 0,
+        "fop": null,
+        "bookType": null,
+        "bookFop": null,
+        "originalBalance": 100,
+        "itemNo": 1
+      }
+    ],
+    "payments": [
+      {
+        "paymentType": "Cash",
+        "checkNo": null,
+        "paymentDate": "2026-11-22",
+        "currency": "PHP",
+        "rate": 1,
+        "amount": 100,
+        "accountCode": 200115,
+        "remarks": "",
+        "itemNo": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "requestHeader": {
+    "RequesterContext": {
+      "RequestId": "{{$guid}}",
+      "RegionCode": "SG",
+      "ServiceCode": "{{serviceCode}}",
+      "SourceSystem": "{{sourceSystem}}",
+      "RequestAt": "{{$now}}"
+    }
+  },
+  "requestDetails": {
+    "paging": {
+      "pageNumber": 1,
+      "pageSize": 30
+    },
+    "agencyId": 1,
+    "dateFilterCategory": "Today",
+    "dateFrom": "2026-11-22",
+    "dateTo": "2026-11-22",
+    "inclusion": "All",
+    "payeeType": "All",
+    "payeeName": null,
+    "payeeId": null,
+    "cdvNo": null,
+    "manualCdvNo": null,
+    "paymentNo": null,
+    "refNo": null,
+    "manualRefNo": null,
+    "createdBy": null,
+    "approvedBy": null,
+    "checkedBy": null,
+    "type": [ "Payment", "Deposit" ],
+    "status": [ "Open", "Posted", "Cancelled" ]
+  }
+}

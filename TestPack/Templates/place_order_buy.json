@@ -1,0 +1,21 @@
+{
+  "RequestHeader": {
+    "RequestId": "{{$guid}}",
+    "RegionalCode": "SG",
+    "ServiceCode": "UTOrderPlacement",
+    "SourceSystem": "{{sourceSystem}}",
+    "RequestAt": "{{$now}}"
+  },
+  "RequestDetails": {
+    "ChannelReferenceNo": "RT{{$timestamp}}",
+    "CustomerId": "{{customerId}}",
+    "InvestorType": "EXISTING",
+    "AccountNo": "{{accountNo}}",
+    "OrderType": "SB",
+    "FundCode": "{{buyFundCode}}",
+    "Currency": "SGD",
+    "Amount": 1000.00,
+    "PaymentMode": "CASA",
+    "DebitAccountNo": "{{casaAccountNo}}"
+  }
+}

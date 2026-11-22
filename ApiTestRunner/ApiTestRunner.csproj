@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <AssemblyName>ApiTestRunner</AssemblyName>
+    <RootNamespace>ApiTestRunner</RootNamespace>
+  </PropertyGroup>
+
+  <!--
+    No NuGet packages are needed by default (Excel read/write is built in).
+    Optional DB verification steps (Method = SQL):  dotnet build -p:EnableSql=true
+  -->
+  <PropertyGroup Condition="'$(EnableSql)' == 'true'">
+    <DefineConstants>$(DefineConstants);ENABLE_SQL</DefineConstants>
+    <!-- Microsoft.Data.SqlClient does not support invariant globalization mode -->
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(EnableSql)' == 'true'">
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
+</Project>

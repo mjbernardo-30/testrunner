@@ -1,0 +1,20 @@
+{
+  "RequestHeader": {
+    "RequestId": "{{$guid}}",
+    "RegionalCode": "SG",
+    "ServiceCode": "UTOrderPlacement",
+    "SourceSystem": "{{sourceSystem}}",
+    "RequestAt": "{{$now}}"
+  },
+  "RequestDetails": {
+    "ChannelReferenceNo": "RT{{$timestamp}}",
+    "CustomerId": "{{customerId}}",
+    "InvestorType": "EXISTING",
+    "AccountNo": "{{accountNo}}",
+    "OrderType": "SR",
+    "FundCode": "{{sellFundCode}}",
+    "Units": 100.0000,
+    "RedemptionMode": "UNITS",
+    "CreditAccountNo": "{{casaAccountNo}}"
+  }
+}

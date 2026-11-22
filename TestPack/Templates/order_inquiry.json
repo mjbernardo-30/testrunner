@@ -1,0 +1,13 @@
+{
+  "RequestHeader": {
+    "RequestId": "{{$guid}}",
+    "RegionalCode": "SG",
+    "ServiceCode": "UTOrderInquiry",
+    "SourceSystem": "{{sourceSystem}}",
+    "RequestAt": "{{$now}}"
+  },
+  "RequestDetails": {
+    "CustomerId": "{{customerId}}",
+    "OrderReferenceNo": "{{orderRefNo}}"
+  }
+}
